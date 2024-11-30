@@ -11,13 +11,13 @@ type NewsListCardProps = {
 }
 
 export const NewsListCard: FC<NewsListCardProps> = ({ news }) => {
-    const type = news?.cardType === 'list' ? 'News' : 'System';
+    const type = news?.cardType === 'list' ? 'News' : 'System message';
 
     return (
         <Box p={5} flex={1}>
             <HStack justifyContent="space-between" alignItems={type === 'News' ? 'center' : 'flex-start'} flex={1}>
                 <VStack flex={1} >
-                    <Text color="primary">{type}</Text>
+                    <Text color="primary" variant="b3bold">{type}</Text>
                     <Text variant="b2medium" >{news?.title}</Text>
                     <HStack mb={2} mt={4} g={4} flex={1}>
                         <HStack alignItems="center" g={3}>
@@ -31,7 +31,7 @@ export const NewsListCard: FC<NewsListCardProps> = ({ news }) => {
                     </HStack>
                 </VStack>
                 {news?.newsImage && <FastImage source={getImage(news?.newsImage as keyof typeof images) as Source} width={100} height={100} style={styles.newsImage} />}
-                {type === 'System' && <Box >
+                {type === 'System message' && <Box >
                     <Icon icon="sharealt" type="ant" color="primary" />
                 </Box>}
             </HStack>

@@ -21,7 +21,7 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
             <Box p={5} flex={1} >
                 <HStack alignItems="flex-start" justifyContent="space-between">
                     <VStack flex={1}>
-                        <Text variant="heading3" color="primary"  >{news.title}</Text>
+                        <Text variant="heading3" color="black"  >{news.title}</Text>
                         <HStack mt={3} g={5}>
                             <HStack alignItems="center" g={3}>
                                 <Icon icon="calendar" type="ant" size={6} color="primary" />
@@ -51,7 +51,7 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
                             </Box>
-                            <Text color="secondary">{player.name}</Text>
+                            <Text color="black" variant="b3semiBold">{player.name}</Text>
                             <Text color="secondary">({player.nickname})</Text>
                         </VStack>;
                     })}
@@ -79,7 +79,7 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
                             </Box>
-                            <Text color="secondary">{player.name}</Text>
+                            <Text color="black" variant="b3semiBold">{player.name}</Text>
                             <Text color="secondary">({player.nickname})</Text>
                         </VStack>;
                     })}

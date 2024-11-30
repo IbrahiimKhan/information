@@ -23,7 +23,7 @@ export const NewsCard: FC<NewsCardProps> = ({ news }) => {
         }
     };
 
-    return <Card>{renderCardContent()}</Card>;
+    return <Card variant={news.cardType === 'list' ? 'transparent' : 'outlined'} borderBottomWidth={1} borderTopWidth={1} borderColor="secondary100">{renderCardContent()}</Card>;
 };
 
 export default NewsCard;

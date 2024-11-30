@@ -51,12 +51,12 @@ export const GameCard: React.FC<GameCardProps> = ({ match, onPress }) => {
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
                             </Box>
-                            <Text color="secondary">{player.name}</Text>
+                            <Text color="black" variant="b3semiBold">{player.name}</Text>
                             <Text color="secondary">({player.nickname})</Text>
                         </VStack>;
                     })}
                 </HStack>
-                <Text color="secondary" variant="heading3" fontWeight={300}>VS.</Text>
+                <Text color="primary" variant="heading3" fontWeight={300}>VS.</Text>
                 <HStack alignItems="center" >
                     {match?.team[1]?.players?.map((player: Player, index: number) => {
                         return <VStack alignItems="center" key={index} p={5}>
@@ -64,7 +64,7 @@ export const GameCard: React.FC<GameCardProps> = ({ match, onPress }) => {
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
                             </Box>
-                            <Text color="secondary">{player.name}</Text>
+                            <Text color="black" variant="b3semiBold">{player.name}</Text>
                             <Text color="secondary">({player.nickname})</Text>
                         </VStack>;
                     })}
@@ -76,15 +76,15 @@ export const GameCard: React.FC<GameCardProps> = ({ match, onPress }) => {
                     <HStack g={5}>
                         <Icon icon="drop" variant="svg" />
                         <HStack>
+                            <Text color="secondary">{match.precipitation}  </Text>
                             <Text color="secondary">Precipitation </Text>
-                            <Text color="secondary">{match.precipitation}</Text>
                         </HStack>
                     </HStack>
                     <HStack g={5}>
                         <Icon icon="cloud" variant="svg" />
                         <HStack>
-                            <Text color="secondary">Precipitation </Text>
-                            <Text color="secondary">{match.precipitation}</Text>
+                            <Text color="secondary">25%  </Text>
+                            <Text color="secondary">Cloudy </Text>
                         </HStack>
                     </HStack>
                 </VStack>

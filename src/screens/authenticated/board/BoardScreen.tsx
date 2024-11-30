@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unstable-nested-components */
-import { Box, Button, Divider, GameCard, Header, HStack, Icon, Text } from '@/components';
+import { Box, Button, Card, Divider, GameCard, Header, HStack, Icon, Text } from '@/components';
 import match from '@/data/match.json';
 import theme from '@/theme';
 import { BoardStackScreenProps } from '@/types/navigation';
@@ -21,14 +21,16 @@ export const BoardScreen: FC<BoardScreenProps> = ({ navigation }) => {
             </Header>
             <Box mt={6} px={7}  >
                 <HStack g={4} >
-                    <Icon variant="svg" icon="filter" />
-                    <Box flexDirection="row" borderWidth={2} alignItems="center" justifyContent="center" borderColor="secondary200" borderRadius="rounded-full" px={5} py={3}>
-                        <Text >Date |</Text>
-                        <Text> Hours</Text>
+                    <Icon variant="svg" icon="filter" size={10} />
+                    <Card flexDirection="row" justifyContent="space-between" width="50%" paddingVertical={4} paddingHorizontal={4} variant="outlined" borderRadius="rounded-full">
+                        <HStack>
+                            <Text color="black" >Date |</Text>
+                            <Text color="black"> Hours</Text>
+                        </HStack>
                         <Box>
                             <Icon icon="chevron-down" color="primary" />
                         </Box>
-                    </Box>
+                    </Card>
                 </HStack>
             </Box>
             <Divider my={5} />
