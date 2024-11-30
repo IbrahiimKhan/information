@@ -12,7 +12,7 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
     let teamBScore = 0;
 
     news.score?.forEach(scr => {
-        const [teamA, teamB] = scr.split(/[-\s]+/).map(Number); // Split and convert to numbers
+        const [teamA, teamB] = scr.split(/[-\s]+/).map(Number);
         teamAScore += teamA;
         teamBScore += teamB;
     });

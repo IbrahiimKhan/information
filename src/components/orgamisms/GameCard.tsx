@@ -1,4 +1,4 @@
-import { Box, Card, Clickable, Divider, HStack, Icon, Text, VStack } from '@/components'; // Assuming the `Card` component is imported from components
+import { Box, Card, Clickable, Divider, HStack, Icon, Text, VStack } from '@/components';
 import theme from '@/theme';
 import React from 'react';
 import { StyleSheet, TouchableOpacityProps } from 'react-native';
