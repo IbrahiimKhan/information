@@ -177,7 +177,9 @@ const Button = ({
                     disabled: `${disabledType.toLowerCase()}Disabled` as ButtonDisabledType,
                 })}
                 size={size}
-                {...rest}>
+                {...rest}
+                borderRadius="rounded-full"
+            >
                 <Clickable onPress={onPress} disabled={disabled} style={styles.flex}>
                     {loading ? <ActivityIndicator /> : children}
                 </Clickable>

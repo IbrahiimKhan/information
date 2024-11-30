@@ -20,3 +20,5 @@ export * from './ui/media-icons/IconButton';
 export * from './ui/media-icons/ImageBanner';
 export * from './ui/media-icons/VectorIcon';
 export * from './ui/typography/Text';
+
+export * from './orgamisms/GameCard';

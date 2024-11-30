@@ -1,4 +1,6 @@
 import board from '@assets/icons/board.svg';
+import cloud from '@assets/icons/cloud.svg';
+import drop from '@assets/icons/drop.svg';
 import filter from '@assets/icons/filter.svg';
 import news from '@assets/icons/news.svg';
 import notification from '@assets/icons/notification.svg';
@@ -15,6 +17,8 @@ export const icons = {
   rankStack: rank,
   newsStack: news,
   filter,
+  drop,
+  cloud,
 };
 
 export type Icon = keyof typeof icons;

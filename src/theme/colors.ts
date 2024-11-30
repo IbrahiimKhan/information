@@ -21,7 +21,7 @@ const palette = {
   color15: '#BCC0C6',
   color16: '#9EA4AC',
   color17: '#808892',
-  color18: '#6B727C',
+  color18: '#B0AAAA',
   color19: '#575D66',
   color20: '#42474F',
   color21: '#30353C',

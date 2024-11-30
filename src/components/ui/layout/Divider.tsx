@@ -24,8 +24,8 @@ const variant = createVariant<Theme, 'dividerVariants'>({ themeKey: 'dividerVari
 
 const RestyleView = createRestyleComponent<DividerProps, Theme>([spacingShorthand, border, variant, layout]);
 
-export const Divider: FC<DividerProps> = ({ borderWidth = 1, ...rest }): ReactElement => {
-    return <RestyleView borderWidth={borderWidth} borderColor="secondary200" {...rest} />;
+export const Divider: FC<DividerProps> = ({ borderWidth = 0.5, ...rest }): ReactElement => {
+    return <RestyleView borderWidth={borderWidth} borderColor="secondary100" {...rest} />;
 };
 
 export default Divider;
