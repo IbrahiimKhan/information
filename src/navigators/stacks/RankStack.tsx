@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { type FC } from 'react';
 
-import { FeedScreen } from '@/screens/authenticated/feed';
+import { FeedScreen } from '@/screens/authenticated/board';
 import { type BottomTabNavigatorScreenProps, type RankStackParamList } from '@/types/navigation';
 
 const Stack = createNativeStackNavigator<RankStackParamList>();

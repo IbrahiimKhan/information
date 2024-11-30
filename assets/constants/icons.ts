@@ -1,4 +1,5 @@
 import board from '@assets/icons/board.svg';
+import filter from '@assets/icons/filter.svg';
 import news from '@assets/icons/news.svg';
 import notification from '@assets/icons/notification.svg';
 import rank from '@assets/icons/rank.svg';
@@ -13,6 +14,7 @@ export const icons = {
   boardStack: board,
   rankStack: rank,
   newsStack: news,
+  filter,
 };
 
 export type Icon = keyof typeof icons;

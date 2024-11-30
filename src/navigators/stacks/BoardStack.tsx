@@ -1,12 +1,12 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { type FC } from 'react';
 
-import { FeedScreen } from '@/screens/authenticated/feed';
+import { BoardScreen } from '@/screens/authenticated/board';
 import { type BoardStackParamList, type BottomTabNavigatorScreenProps } from '@/types/navigation';
 
 const Stack = createNativeStackNavigator<BoardStackParamList>();
 
-export const Account: FC<BottomTabNavigatorScreenProps<'BoardStack'>> = () => {
+export const BoardStack: FC<BottomTabNavigatorScreenProps<'BoardStack'>> = () => {
     return (
         <Stack.Navigator
             screenOptions={{
@@ -14,8 +14,8 @@ export const Account: FC<BottomTabNavigatorScreenProps<'BoardStack'>> = () => {
                 animationDuration: 0,
             }}>
             <Stack.Screen
-                name="Account"
-                component={FeedScreen}
+                name="Board"
+                component={BoardScreen}
                 options={{
                     headerShown: false,
                 }}

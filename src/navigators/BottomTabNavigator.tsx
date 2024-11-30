@@ -15,8 +15,8 @@ import {
 } from '@/types/navigation';
 
 import { IconButton } from '@/components';
-import { Accountscreen } from '@/screens/authenticated/account';
 import { useStringHelper } from '@/utils';
+import { BoardStack } from './stacks/BoardStack';
 import { NewsStack } from './stacks/NewsStack';
 import { RankStack } from './stacks/RankStack';
 import { RegisterStack } from './stacks/RegisterStack';
@@ -83,7 +83,7 @@ export const BottomTabNavigator: FC<BottomTabNavigatorProps> = (): ReactElement 
             />
             <Tab.Screen
                 name="BoardStack"
-                component={Accountscreen}
+                component={BoardStack}
                 options={{
                     title: 'Game Board',
                     tabBarActiveTintColor: theme.colors.primary,

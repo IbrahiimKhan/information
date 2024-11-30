@@ -11,6 +11,7 @@ export * from './ui/layout/Card';
 export * from './ui/layout/Center';
 export * from './ui/layout/Divider';
 export * from './ui/layout/Grid';
+export * from './ui/layout/Header';
 export * from './ui/layout/HStack';
 export * from './ui/layout/VStack';
 export * from './ui/media-icons/FastImage';
