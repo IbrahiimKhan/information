@@ -2,11 +2,10 @@ import theme from '@/theme';
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { Text } from '../ui/typography/Text';
+import { Box } from '../ui/layout/Box';
 import Card from '../ui/layout/Card';
 import Icon from '../ui/media-icons/Icon';
-import HStack from '../ui/layout/HStack';
-import { Box } from '../ui/layout/Box';
+import { Text } from '../ui/typography/Text';
 
 interface ChatBoxProps {
     message: {
@@ -30,11 +29,13 @@ export const ChatBox: React.FC<ChatBoxProps> = ({ message, isLastMessage }) => {
             <Card borderRadius="rounded-md" variant={isUser1 ? 'elevated' : 'outlined'} flex={1} overflow="hidden">
                 <LinearGradient start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}
                     colors={isUser1 ? [theme.colors.black, theme.colors.primary] : [theme.colors.white, theme.colors.white]}
-                    style={styles.container}
+
                 >
-                    <Text color={isUser1 ? 'white' : 'black'} mb={4} variant="b2medium" fontWeight={900}>{message.name}</Text>
-                    <Text color={isUser1 ? 'white' : 'black'} mb={2}>{message.message}</Text>
-                    <Text color={isUser1 ? 'white' : 'black'} textAlign="right" >{new Date(message.timestamp).toLocaleTimeString()}</Text>
+                    <Box style={styles.container}>
+                        <Text color={isUser1 ? 'white' : 'black'} mb={4} variant="b2medium" fontWeight={900}>{message.name}</Text>
+                        <Text color={isUser1 ? 'white' : 'black'} mb={2}>{message.message}</Text>
+                        <Text color={isUser1 ? 'white' : 'black'} textAlign="right" >{new Date(message.timestamp).toLocaleTimeString()}</Text>
+                    </Box>
                 </LinearGradient>
             </Card>
             {isLastMessage && !isUser1 && <Icon icon="avatar" variant="image" />}

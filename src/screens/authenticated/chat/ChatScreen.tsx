@@ -13,12 +13,13 @@ import chatMessages from '@/data/chat.json';
 import theme from '@/theme';
 import { FlashList } from '@shopify/flash-list';
 import React, { FC, useRef, useState } from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { Platform, SafeAreaView, StyleSheet } from 'react-native';
 
 export const ChatScreen: FC = () => {
     const [messages, setMessages] = useState(chatMessages);
     const [inputText, setInputText] = useState('');
     const flashListRef = useRef<any>();
+    const isIOS = Platform.OS === 'ios';
 
     const handleSendMessage = () => {
         if (!inputText.trim()) { return; }
@@ -81,7 +82,7 @@ export const ChatScreen: FC = () => {
                     }}
                 />
             </Box>
-            <Box height={120} bg="primary" />
+            <Box height={isIOS ? theme.sizes.height / 10 : theme.sizes.height / 7.5} bg="white" />
             <Box position="absolute" width="100%" bottom={0} bg="white" py={10} px={7}>
                 <HStack alignItems="center">
                     <Icon icon="plus" color="primary" />
