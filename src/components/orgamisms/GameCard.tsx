@@ -1,12 +1,12 @@
 import { Box, Card, Clickable, Divider, HStack, Icon, Text, VStack } from '@/components'; // Assuming the `Card` component is imported from components
 import theme from '@/theme';
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, TouchableOpacityProps } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 type Player = { name: string; nickname: string; nationality: string; photo: string }
 
-interface GameCardProps {
+interface GameCardProps extends TouchableOpacityProps {
     match: {
         matchTitle: string;
         matchTime: string;
@@ -17,7 +17,7 @@ interface GameCardProps {
     };
 }
 
-export const GameCard: React.FC<GameCardProps> = ({ match }) => {
+export const GameCard: React.FC<GameCardProps> = ({ match, onPress }) => {
     return (
         <Card variant="outlined">
             <Box p={5}>
@@ -89,7 +89,7 @@ export const GameCard: React.FC<GameCardProps> = ({ match }) => {
                     </HStack>
                 </VStack>
                 <LinearGradient start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.gradeint} colors={[theme.colors.primary, theme.colors.black]}>
-                    <Clickable>
+                    <Clickable onPress={onPress} style={styles.button}>
                         <Text color="white" variant="b3semiBold" >
                             Chat
                         </Text>
@@ -113,5 +113,8 @@ const styles = StyleSheet.create({
     },
     badge: {
         position: 'absolute', bottom: 0, right: 0, borderRadius: 5,
+    },
+    button: {
+        width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center',
     },
 });

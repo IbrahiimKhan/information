@@ -1,11 +1,19 @@
+/* eslint-disable react/no-unstable-nested-components */
 import { Box, Button, Divider, GameCard, Header, HStack, Icon, Text } from '@/components';
 import match from '@/data/match.json';
 import theme from '@/theme';
+import { BoardStackScreenProps } from '@/types/navigation';
 import { FlashList } from '@shopify/flash-list';
-import React from 'react';
+import React, { FC } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-export const BoardScreen = () => {
+interface BoardScreenProps extends BoardStackScreenProps<'Board'> { }
+
+export const BoardScreen: FC<BoardScreenProps> = ({ navigation }) => {
+
+    const handleChat = () => {
+        navigation.navigate('Chat');
+    };
     return (
         <SafeAreaView style={styles.container}>
             <Header bg="black">
@@ -35,7 +43,7 @@ export const BoardScreen = () => {
                     showsVerticalScrollIndicator={false}
                     data={match}
                     estimatedItemSize={200}
-                    renderItem={({ item }) => <GameCard match={item} />}
+                    renderItem={({ item }) => <GameCard onPress={() => handleChat()} match={item} />}
                     keyExtractor={(item, index) => index.toString()}
                     ItemSeparatorComponent={() => <Box height={10} />}
                     contentContainerStyle={styles.contentContainer}

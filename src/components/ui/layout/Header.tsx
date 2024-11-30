@@ -29,11 +29,11 @@ const BackAction = ({ onPress }: { onPress?: () => void }): ReactElement => {
 
     return (
         <IconButton
-            right={8}
-            size={8}
+            size={10}
             variant="vector"
             type="ant"
-            icon="arrowleft"
+            color="primary"
+            icon="chevron-left"
             onPress={onPress ?? navigateBack}
         />
     );
@@ -60,7 +60,7 @@ const Content = ({ title, subTitle = undefined, color = 'white', icon = 'avatar'
 };
 
 const Action = (props: { icon: string; onPress?: () => void } & IconButtonProps): ReactElement => {
-    return <IconButton {...props} left={14} />;
+    return <IconButton {...props} />;
 };
 
 Header.BackAction = BackAction;

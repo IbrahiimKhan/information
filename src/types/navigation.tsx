@@ -25,6 +25,7 @@ export type UnAuthenticatedStackNavigatorParamList = {
 
 export type AuthenticatedStackNavigatorParamList = {
     Root: NavigatorScreenParams<BottomTabNavigatorParamList>;
+    Chat: undefined
 };
 
 //all screen params for bottom tab
@@ -70,7 +71,8 @@ export type BoardStackScreenProps<T extends keyof BoardStackParamList> = NativeS
 >;
 
 export type BoardStackParamList = {
-    Board: undefined
+    Board: undefined,
+    Chat: undefined
 }
 
 //gloabl types

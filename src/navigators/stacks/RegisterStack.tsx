@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { type FC } from 'react';
 
-import { HomeScreen } from '@/screens/authenticated/home';
+import { HomeScreen } from '@/screens/authenticated/chat';
 import { type BottomTabNavigatorScreenProps, type RegisterStackParamList } from '@/types/navigation';
 
 const Stack = createNativeStackNavigator<RegisterStackParamList>();
