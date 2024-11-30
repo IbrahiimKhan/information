@@ -56,7 +56,7 @@
     },
     {
       "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
-      "time": "02/20/2023 11:00",
+      "time": "an hour ago",
       "cardType": "system"    },
     {
       "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
@@ -108,7 +108,7 @@
     },
     {
       "title": "Botanical Gardens, Singapore | Court #2",
-      "time": "02/28/2023 17:00",
+      "time": "Two minutes ago",
       "cardType": "system"
         },
     {
@@ -161,7 +161,7 @@
     },
     {
       "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
-      "time": "03/07/2023 09:00",
+      "time": "5 hours ago",
       "cardType": "system"
     }
   ]

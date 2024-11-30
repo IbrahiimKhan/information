@@ -16,18 +16,18 @@ export const NewsListCard: FC<NewsListCardProps> = ({ news }) => {
     return (
         <Box p={5} flex={1}>
             <HStack justifyContent="space-between" alignItems={type === 'News' ? 'center' : 'flex-start'} flex={1}>
-                <VStack flex={1}>
+                <VStack flex={1} >
                     <Text color="primary">{type}</Text>
                     <Text variant="b2medium" >{news?.title}</Text>
-                    <HStack my={2} flex={1}>
+                    <HStack mb={2} mt={4} g={4} flex={1}>
                         <HStack alignItems="center" g={3}>
                             <Icon icon="clock" type="evil" size={6} color="primary" />
                             <Text variant="b4semiBold" color="secondary">{news?.time}</Text>
                         </HStack>
-                        <HStack alignItems="center" g={3}>
+                        {type === 'News' && <HStack alignItems="center" g={3}>
                             <Icon icon="chatbubble-outline" type="ionicon" size={6} color="primary" />
                             <Text variant="b4semiBold" color="secondary">{news?.comments}</Text>
-                        </HStack>
+                        </HStack>}
                     </HStack>
                 </VStack>
                 {news?.newsImage && <FastImage source={getImage(news?.newsImage as keyof typeof images) as Source} width={100} height={100} style={styles.newsImage} />}
