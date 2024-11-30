@@ -6,6 +6,7 @@ import news from '@assets/icons/news.svg';
 import notification from '@assets/icons/notification.svg';
 import rank from '@assets/icons/rank.svg';
 import register from '@assets/icons/register.svg';
+import fly from '@assets/icons/fly.svg';
 import { FC } from 'react';
 import { SvgProps } from 'react-native-svg';
 
@@ -19,6 +20,7 @@ export const icons = {
   filter,
   drop,
   cloud,
+  fly,
 };
 
 export type Icon = keyof typeof icons;

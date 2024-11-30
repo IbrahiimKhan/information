@@ -23,7 +23,7 @@ export const ChatBox: React.FC<ChatBoxProps> = ({ message, isLastMessage }) => {
     const isUser1 = message.userId === 'u1';
 
     return (
-        <Box flexDirection="row" borderRadius="rounded-md" overflow="hidden" alignItems="flex-end" g={2} alignSelf={isUser1 ? 'flex-start' : 'flex-end'} marginVertical={4} maxWidth="90%" >
+        <Box flexDirection="row" borderRadius="rounded-md" overflow="hidden" alignItems="flex-end" g={2} alignSelf={isUser1 ? 'flex-start' : 'flex-end'} marginVertical={3} maxWidth="90%" >
             {isLastMessage && isUser1 && <Icon icon="avatar" variant="image" />}
             {isUser1 && !isLastMessage && < Box width={20} />}
 

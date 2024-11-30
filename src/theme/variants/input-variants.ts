@@ -20,6 +20,9 @@ export const inputVariants = {
   underlined: {
     borderBottomWidth: 1,
   },
+  shadow: {
+    borderColor: 'transparent',
+  },
 };
 
 export const inputSizeVariants = {
