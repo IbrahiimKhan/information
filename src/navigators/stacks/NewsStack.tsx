@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React, { type FC } from 'react';
 
-import { ServiceScreen } from '@/screens/authenticated/service';
+import { NewsScreen } from '@/screens/authenticated/news';
 import { type BottomTabNavigatorScreenProps, type NewsStackParamList } from '@/types/navigation';
 
 const Stack = createNativeStackNavigator<NewsStackParamList>();
@@ -14,8 +14,8 @@ export const NewsStack: FC<BottomTabNavigatorScreenProps<'NewsStack'>> = () => {
                 animationDuration: 0,
             }}>
             <Stack.Screen
-                name="Service"
-                component={ServiceScreen}
+                name="News"
+                component={NewsScreen}
                 options={{
                     headerShown: false,
                 }}

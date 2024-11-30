@@ -1,0 +1,168 @@
+[
+    {
+      "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
+      "time": "02/25/2023 10:00",
+      "comments": 12,
+      "cardType": "list",
+      "newsImage": "player"
+    },
+    {
+      "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
+      "time": "03/01/2023 15:00",
+      "comments": 8,
+      "cardType": "list",
+      "newsImage": "player"
+    },
+    {
+      "title": "Yarkon Park, Tel Aviv | Court #2",
+      "time": "02/24/2023 14:00",
+      "comments": 25,
+      "cardType": "score",
+      "score":["2 - 1","4-1","2-3"],
+      "team": [
+        {
+          "players": [
+            {
+              "name": "james",
+              "nickname": "elite",
+              "nationality": "usa",
+              "photo": "avatar"
+            },
+            {
+              "name": "lucas",
+              "nickname": "champion",
+              "nationality": "usa",
+              "photo": "avatar"
+            }
+          ]
+        },
+        {
+          "players": [
+            {
+              "name": "mike",
+              "nickname": "fast",
+              "nationality": "usa",
+              "photo": "avatar"
+            },
+            {
+              "name": "tom",
+              "nickname": "warrior",
+              "nationality": "usa",
+              "photo": "avatar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
+      "time": "02/20/2023 11:00",
+      "cardType": "system"    },
+    {
+      "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
+      "time": "03/03/2023 16:30",
+      "comments": 18,
+      "cardType": "list",
+      "newsImage": "player"
+    },
+    {
+      "title": "Ueno Park, Tokyo | Court #4",
+      "time": "03/05/2023 13:00",
+      "comments": 30,
+      "cardType": "score",
+      "score":["2 - 1","1-1","2-3"],
+      "team": [
+        {
+          "players": [
+            {
+              "name": "akira",
+              "nickname": "speedster",
+              "nationality": "japan",
+              "photo": "avatar"
+            },
+            {
+              "name": "haruto",
+              "nickname": "ninja",
+              "nationality": "japan",
+              "photo": "avatar"
+            }
+          ]
+        },
+        {
+          "players": [
+            {
+              "name": "ryan",
+              "nickname": "ace",
+              "nationality": "canada",
+              "photo": "avatar"
+            },
+            {
+              "name": "liam",
+              "nickname": "striker",
+              "nationality": "canada",
+              "photo": "avatar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Botanical Gardens, Singapore | Court #2",
+      "time": "02/28/2023 17:00",
+      "cardType": "system"
+        },
+    {
+      "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
+      "time": "02/26/2023 12:30",
+      "comments": 40,
+      "cardType": "list",
+      "newsImage": "player"
+    },
+    {
+      "title": "Chapultepec Park, Mexico City | Court #7",
+      "time": "03/02/2023 10:15",
+      "comments": 22,
+      "cardType": "score",
+      "score":["2 - 1","1-1","2-3"],
+      "team": [
+        {
+          "players": [
+            {
+              "name": "carlos",
+              "nickname": "shooter",
+              "nationality": "mexico",
+              "photo": "avatar"
+            },
+            {
+              "name": "diego",
+              "nickname": "eagle",
+              "nationality": "mexico",
+              "photo": "avatar"
+            }
+          ]
+        },
+        {
+          "players": [
+            {
+              "name": "alex",
+              "nickname": "panther",
+              "nationality": "usa",
+              "photo": "avatar"
+            },
+            {
+              "name": "john",
+              "nickname": "lion",
+              "nationality": "usa",
+              "photo": "avatar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lorem Ipsum is a term for a completely meaningless text - sometimes read",
+      "time": "03/07/2023 09:00",
+      "cardType": "system"
+    }
+  ]
+  
