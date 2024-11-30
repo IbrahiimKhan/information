@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Hi John, how are you?",
+        "timestamp": "2024-11-30T10:00:00Z"
+    },
+    {
+        "id": 2,
+        "userId": "u2",
+        "name": "John",
+        "message": "Hey Jane, I'm doing well. How about you?",
+        "timestamp": "2024-11-30T10:01:00Z"
+    },
+    {
+        "id": 3,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "I'm good too, thanks! What are you up to?",
+        "timestamp": "2024-11-30T10:02:00Z"
+    },
+    {
+        "id": 4,
+        "userId": "u2",
+        "name": "John",
+        "message": "Just working on a project. What about you?",
+        "timestamp": "2024-11-30T10:03:00Z"
+    },
+    {
+        "id": 5,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Same here. Got a lot of deadlines to meet!",
+        "timestamp": "2024-11-30T10:04:00Z"
+    },
+    {
+        "id": 6,
+        "userId": "u2",
+        "name": "John",
+        "message": "I know the feeling. Let me know if you need any help.",
+        "timestamp": "2024-11-30T10:05:00Z"
+    },
+    {
+        "id": 7,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Thanks, I appreciate that!",
+        "timestamp": "2024-11-30T10:06:00Z"
+    },
+    {
+        "id": 8,
+        "userId": "u2",
+        "name": "John",
+        "message": "Anytime! By the way, did you check out the new update?",
+        "timestamp": "2024-11-30T10:07:00Z"
+    },
+    {
+        "id": 9,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Not yet. Is it good?",
+        "timestamp": "2024-11-30T10:08:00Z"
+    },
+    {
+        "id": 10,
+        "userId": "u2",
+        "name": "John",
+        "message": "Yeah, they added some cool features. You should try it.",
+        "timestamp": "2024-11-30T10:09:00Z"
+    },
+    {
+        "id": 11,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "I will! Thanks for the heads-up.",
+        "timestamp": "2024-11-30T10:10:00Z"
+    },
+    {
+        "id": 12,
+        "userId": "u2",
+        "name": "John",
+        "message": "No problem. Let me know your thoughts once you try it.",
+        "timestamp": "2024-11-30T10:11:00Z"
+    },
+    {
+        "id": 13,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Sure thing!",
+        "timestamp": "2024-11-30T10:12:00Z"
+    },
+    {
+        "id": 14,
+        "userId": "u2",
+        "name": "John",
+        "message": "By the way, are you free this weekend?",
+        "timestamp": "2024-11-30T10:13:00Z"
+    },
+    {
+        "id": 15,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "I think so. Why?",
+        "timestamp": "2024-11-30T10:14:00Z"
+    },
+    {
+        "id": 16,
+        "userId": "u2",
+        "name": "John",
+        "message": "I was thinking we could catch up over coffee.",
+        "timestamp": "2024-11-30T10:15:00Z"
+    },
+    {
+        "id": 17,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "That sounds great! Let’s do it.",
+        "timestamp": "2024-11-30T10:16:00Z"
+    },
+    {
+        "id": 18,
+        "userId": "u2",
+        "name": "John",
+        "message": "Awesome! I'll text you the details later.",
+        "timestamp": "2024-11-30T10:17:00Z"
+    },
+    {
+        "id": 19,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Perfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with players",
+        "timestamp": "2024-11-30T10:18:00Z"
+    },
+    {
+        "id": 20,
+        "userId": "u1",
+        "name": "Jane",
+        "message": "Perfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with players Perfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with players",
+        "timestamp": "2024-11-30T10:18:00Z"
+    },
+    {
+        "id": 21,
+        "userId": "u2",
+        "name": "John",
+        "message": "Same here. See you soon! Perfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with playersPerfect. Looking forward to it! Certainly, it was fantastic to see how long each point lasted. It's always fun to play with players",
+        "timestamp": "2024-11-30T10:19:00Z"
+    },
+    {
+        "id": 22,
+        "userId": "u2",
+        "name": "John",
+        "message": "Same here. See you soon!",
+        "timestamp": "2024-11-30T10:19:00Z"
+    }
+]

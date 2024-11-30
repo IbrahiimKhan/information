@@ -22,3 +22,4 @@ export * from './ui/media-icons/VectorIcon';
 export * from './ui/typography/Text';
 
 export * from './orgamisms/GameCard';
+export * from './molecules/ChatBox';
