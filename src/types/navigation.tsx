@@ -1,4 +1,3 @@
-import { type ComponentProps } from 'react';
 import { type BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import {
     type CompositeScreenProps,
@@ -6,6 +5,7 @@ import {
     type NavigatorScreenParams,
 } from '@react-navigation/native';
 import { type NativeStackScreenProps } from '@react-navigation/native-stack';
+import { type ComponentProps } from 'react';
 
 export interface NavigationProps extends Partial<ComponentProps<typeof NavigationContainer>> { }
 
@@ -29,49 +29,48 @@ export type AuthenticatedStackNavigatorParamList = {
 
 //all screen params for bottom tab
 export type BottomTabNavigatorParamList = {
-    HomeStack: NavigatorScreenParams<HomeStackParamList>;
-    ServiceStack: NavigatorScreenParams<ServiceStackParamList>;
-    AccountStack: NavigatorScreenParams<AccountStackParamList>;
-    FeedStack: NavigatorScreenParams<FeedStackParamList>;
+    RegisterStack: NavigatorScreenParams<RegisterStackParamList>;
+    NewsStack: NavigatorScreenParams<NewsStackParamList>;
+    BoardStack: NavigatorScreenParams<BoardStackParamList>;
+    RankStack: NavigatorScreenParams<RankStackParamList>;
 };
 
-// 1: home related types
-export type HomeStackParamList = {
-    Home: undefined;
-    Account: undefined;
+// 1: register related types
+export type RegisterStackParamList = {
+    Register: undefined;
 };
 
-export type HomeStackScreenProps<T extends keyof HomeStackParamList> = NativeStackScreenProps<
-    HomeStackParamList,
+export type RegisterStackScreenProps<T extends keyof RegisterStackParamList> = NativeStackScreenProps<
+    RegisterStackParamList,
     T
 >;
 
-// 2: service related types
-export type ServiceStackParamList = {
-    Service: undefined;
+// 2: News related types
+export type NewsStackParamList = {
+    News: undefined;
 };
 
-export type ServiceStackScreenProps<T extends keyof ServiceStackParamList> =
-    NativeStackScreenProps<ServiceStackParamList, T>;
+export type NewsStackScreenProps<T extends keyof NewsStackParamList> =
+    NativeStackScreenProps<NewsStackParamList, T>;
 
-// 3: feed related types
-export type FeedStackScreenProps<T extends keyof FeedStackParamList> = NativeStackScreenProps<
-    FeedStackParamList,
+// 3: rank related types
+export type RankStackScreenProps<T extends keyof RankStackParamList> = NativeStackScreenProps<
+    RankStackParamList,
     T
 >;
 
-export type FeedStackParamList = {
-    Feed: undefined
+export type RankStackParamList = {
+    Rank: undefined
 };
 
-// 3: Account related types
-export type AccountStackScreenProps<T extends keyof AccountStackParamList> = NativeStackScreenProps<
-    AccountStackParamList,
+// 3: board related types
+export type BoardStackScreenProps<T extends keyof BoardStackParamList> = NativeStackScreenProps<
+    BoardStackParamList,
     T
 >;
 
-export type AccountStackParamList = {
-    Account: undefined
+export type BoardStackParamList = {
+    Board: undefined
 }
 
 //gloabl types
@@ -101,9 +100,9 @@ declare global {
             extends RootNavigatorParamList,
             UnAuthenticatedStackNavigatorParamList,
             AuthenticatedStackNavigatorParamList,
-            HomeStackParamList,
-            ServiceStackParamList,
-            AccountStackParamList,
-            FeedStackParamList { }
+            RegisterStackParamList,
+            NewsStackParamList,
+            BoardStackParamList,
+            RankStackParamList { }
     }
 }

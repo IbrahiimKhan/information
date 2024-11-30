@@ -16,24 +16,26 @@ import {
 
 import { IconButton } from '@/components';
 import { Accountscreen } from '@/screens/authenticated/account';
-import { FeedStack } from './stacks/FeedStack';
-import { HomeStack } from './stacks/HomeStack';
-import { ServiceStack } from './stacks/ServiceStack';
+import { useStringHelper } from '@/utils';
+import { NewsStack } from './stacks/NewsStack';
+import { RankStack } from './stacks/RankStack';
+import { RegisterStack } from './stacks/RegisterStack';
 
 const BottomTabIcon = ({
     focused,
+    title,
 }: {
     title: string;
     focused: boolean;
     color: string;
     size: number;
 }): ReactElement => {
+    const { camelize } = useStringHelper();
     return (
         <IconButton
-            variant="vector"
-            {...(focused && { iconStyle: 'contained' })}
-            icon={'home'}
-            color={focused ? 'primary' : 'black'}
+            variant="svg"
+            icon={camelize(title)}
+            color={focused ? 'primary' : 'white'}
             size={7}
         />
     );
@@ -59,39 +61,61 @@ export const BottomTabNavigator: FC<BottomTabNavigatorProps> = (): ReactElement 
         tabBarStyle: [$tabBar, { height: 64 + bottom }],
         tabBarLabelStyle: $tabBarLabel,
         tabBarItemStyle: $tabBarItem,
-        tabBarIcon: props => <BottomTabIcon {...props} title={route.name} />,
+
+        tabBarIcon: props => <BottomTabIcon {...props} title={route?.name} />,
     });
 
     return (
-        <Tab.Navigator screenOptions={screenOptions}>
+        <Tab.Navigator screenOptions={screenOptions} initialRouteName="BoardStack">
             <Tab.Screen
-                name="HomeStack"
-                component={HomeStack}
+                name="RegisterStack"
+                component={RegisterStack}
                 options={{
-                    title: 'Home',
+                    title: 'Register',
+                    tabBarActiveTintColor: theme.colors.primary,
+                    tabBarInactiveTintColor: theme.colors.white,
+                }}
+                listeners={{
+                    tabPress: e => {
+                        e.preventDefault();
+                    },
                 }}
             />
             <Tab.Screen
-                name="ServiceStack"
-                component={ServiceStack}
-                options={{
-                    title: 'Screen2',
-                }}
-            />
-            <Tab.Screen
-                name="FeedStack"
-                component={FeedStack}
-                options={{
-                    title: 'Screen 3',
-                }}
-            />
-            <Tab.Screen
-                name="AccountStack"
+                name="BoardStack"
                 component={Accountscreen}
                 options={{
-                    title: 'Screen4',
+                    title: 'Game Board',
+                    tabBarActiveTintColor: theme.colors.primary,
+                    tabBarInactiveTintColor: theme.colors.white,
                 }}
             />
+            <Tab.Screen
+                name="RankStack"
+                component={RankStack}
+                options={{
+                    title: 'Rank',
+                    tabBarActiveTintColor: theme.colors.primary,
+                    tabBarInactiveTintColor: theme.colors.white,
+                }}
+                listeners={{
+                    tabPress: e => {
+                        e.preventDefault();
+                    },
+                }}
+
+            />
+            <Tab.Screen
+                name="NewsStack"
+                component={NewsStack}
+                options={{
+                    title: 'News',
+                    tabBarActiveTintColor: theme.colors.primary,
+                    tabBarInactiveTintColor: theme.colors.white,
+                }}
+            />
+
+
         </Tab.Navigator>
     );
 };
@@ -101,6 +125,7 @@ export default BottomTabNavigator;
 const $tabBar: ViewStyle = {
     // borderTopLeftRadius: 24,
     // borderTopRightRadius: 24
+    backgroundColor: theme.colors.black,
 };
 
 const $tabBarItem: ViewStyle = {

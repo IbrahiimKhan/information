@@ -33,7 +33,7 @@ const palette = {
   color25: '#A5A5A5',
   color26: '#818181',
   color27: '#5F5F5F',
-  color28: '#3B3B3B',
+  color28: '#1F1B1B',
   color29: '#2D2D2D',
   color30: '#212121',
   color31: '#181818',
@@ -89,7 +89,6 @@ const palette = {
   color72: '#2A2D32',
   color73: '#1F2124',
 };
-
 
 export const colors = {
   // bg color

@@ -1,12 +1,12 @@
-import React, { type FC } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React, { type FC } from 'react';
 
 import { FeedScreen } from '@/screens/authenticated/feed';
-import { type BottomTabNavigatorScreenProps, type AccountStackParamList } from '@/types/navigation';
+import { type BoardStackParamList, type BottomTabNavigatorScreenProps } from '@/types/navigation';
 
-const Stack = createNativeStackNavigator<AccountStackParamList>();
+const Stack = createNativeStackNavigator<BoardStackParamList>();
 
-export const Account: FC<BottomTabNavigatorScreenProps<'AccountStack'>> = () => {
+export const Account: FC<BottomTabNavigatorScreenProps<'BoardStack'>> = () => {
     return (
         <Stack.Navigator
             screenOptions={{

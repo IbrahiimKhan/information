@@ -1,12 +1,12 @@
-import React, { type FC } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React, { type FC } from 'react';
 
 import { ServiceScreen } from '@/screens/authenticated/service';
-import { type BottomTabNavigatorScreenProps, type ServiceStackParamList } from '@/types/navigation';
+import { type BottomTabNavigatorScreenProps, type NewsStackParamList } from '@/types/navigation';
 
-const Stack = createNativeStackNavigator<ServiceStackParamList>();
+const Stack = createNativeStackNavigator<NewsStackParamList>();
 
-export const ServiceStack: FC<BottomTabNavigatorScreenProps<'ServiceStack'>> = () => {
+export const NewsStack: FC<BottomTabNavigatorScreenProps<'NewsStack'>> = () => {
     return (
         <Stack.Navigator
             screenOptions={{

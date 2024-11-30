@@ -1,12 +1,12 @@
-import React, { type FC } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React, { type FC } from 'react';
 
-import { HomeScreen } from '@/screens/authenticated/home';
-import { type BottomTabNavigatorScreenProps, type HomeStackParamList } from '@/types/navigation';
+import { FeedScreen } from '@/screens/authenticated/feed';
+import { type BottomTabNavigatorScreenProps, type RankStackParamList } from '@/types/navigation';
 
-const Stack = createNativeStackNavigator<HomeStackParamList>();
+const Stack = createNativeStackNavigator<RankStackParamList>();
 
-export const HomeStack: FC<BottomTabNavigatorScreenProps<'HomeStack'>> = () => {
+export const RankStack: FC<BottomTabNavigatorScreenProps<'RankStack'>> = () => {
     return (
         <Stack.Navigator
             screenOptions={{
@@ -14,8 +14,8 @@ export const HomeStack: FC<BottomTabNavigatorScreenProps<'HomeStack'>> = () => {
                 animationDuration: 0,
             }}>
             <Stack.Screen
-                name="Home"
-                component={HomeScreen}
+                name="Feed"
+                component={FeedScreen}
                 options={{
                     headerShown: false,
                 }}
