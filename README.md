@@ -1,14 +1,14 @@
-# information | Code faster with prebuild boilerplate
-
-Project name is a `information` which `provides boilerplate code to kickstart your rn projct with restyle theme`.
+# inforamtion
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
+
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `nodejs`
-* You have a `<Windows/Linux/Mac>` machine.
-* >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+
+- You have installed the latest version of `nodejs`
+- You have a `<Windows/Linux/Mac>` machine.
+- > **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Getting Started
 
@@ -20,6 +20,12 @@ To start Metro, run the following command from the _root_ of your my-care-mobile
 
 ```bash
 yarn start
+```
+
+install the cocoapods for ios
+
+```bash
+yarn pod
 ```
 
 #### Step 2: Start your Application
@@ -41,25 +47,3 @@ yarn ios
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-
-## Contributing to information 
-<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
-To contribute to information, follow these steps:
-
-1. Clone this repository.
-2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the branch: `git push`
-5. Create the pull request.
-
-## Contributors
-
-Thanks to the following people who have contributed to information project:
-
-* [@IbrahiimKhan](https://github.com/IbrahiimKhan) 📖
-
-
-## Contact
-
-If you want to contact me you can reach me at <khan.ask.ibrahim@gmail.com>.
