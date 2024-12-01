@@ -46,7 +46,7 @@ export const GameCard: React.FC<GameCardProps> = ({ match, onPress }) => {
             <HStack justifyContent="space-between" py={5}>
                 <HStack  >
                     {match?.team[0]?.players?.map((player: Player, index: number) => {
-                        return <VStack alignItems="center" key={index} p={5}>
+                        return <VStack alignItems="center" key={index} p={3}>
                             <Box>
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
@@ -59,13 +59,12 @@ export const GameCard: React.FC<GameCardProps> = ({ match, onPress }) => {
                 <Text color="primary" variant="heading3" fontWeight={300}>VS.</Text>
                 <HStack alignItems="center" >
                     {match?.team[1]?.players?.map((player: Player, index: number) => {
-                        return <VStack alignItems="center" key={index} p={5}>
-                            <Box>
-                                <Icon size={18} variant="image" icon={player.photo} />
-                                <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
+                        return <VStack alignItems="center" key={index} p={3}>
+                            <Box alignItems="center" justifyContent="center" flexDirection="row" width={48} height={48} borderRadius="rounded-full" borderWidth={2} borderStyle="dotted" borderColor="primary">
+                                <Icon icon="plus" color="primary" />
                             </Box>
-                            <Text color="black" variant="b3semiBold">{player.name}</Text>
-                            <Text color="secondary">({player.nickname})</Text>
+                            <Text color="black" variant="b3semiBold">Player</Text>
+                            <Text color="secondary">(nickname)</Text>
                         </VStack>;
                     })}
                 </HStack>
