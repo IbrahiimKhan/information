@@ -107,5 +107,6 @@ const styles = StyleSheet.create({
     },
     contentContainer: {
         paddingTop: theme.spacing[5],
+        paddingBottom: theme.spacing[10],
     },
 });

@@ -43,10 +43,10 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
                 </HStack>
             </Box>
             <Divider />
-            <HStack justifyContent="space-between" py={5}>
+            <HStack justifyContent="space-between" py={5} px={3}>
                 <HStack  >
                     {news?.team[0]?.players?.map((player: Player, index: number) => {
-                        return <VStack alignItems="center" key={index} p={5}>
+                        return <VStack alignItems="center" key={index} p={2}>
                             <Box>
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
@@ -56,10 +56,10 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
                         </VStack>;
                     })}
                 </HStack>
-                <VStack alignItems="center">
+                <VStack alignItems="center" >
                     <Text variant="b2regular">{teamAScore} - {teamBScore}</Text>
                     {news?.score?.map((score: string, index: number) => (
-                        <Card key={index} variant="outlined" width={50} alignItems="center" marginBottom={4}>
+                        <Card key={index} variant="outlined" width={40} alignItems="center" marginBottom={4}>
                             <Text
 
                                 color="black"
@@ -74,7 +74,7 @@ const NewsScoreCard: FC<NewsScoreCardProps> = ({ news }) => {
 
                 <HStack alignItems="center" >
                     {news?.team[1]?.players?.map((player: Player, index: number) => {
-                        return <VStack alignItems="center" key={index} p={5}>
+                        return <VStack alignItems="center" key={index} p={2}>
                             <Box>
                                 <Icon size={18} variant="image" icon={player.photo} />
                                 <Icon size={7} variant="image" icon={player.nationality} style={styles.badge} />
